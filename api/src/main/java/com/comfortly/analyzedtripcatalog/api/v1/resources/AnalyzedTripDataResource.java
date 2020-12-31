@@ -29,6 +29,7 @@ public class AnalyzedTripDataResource {
     protected UriInfo uriInfo;
 
     @GET
+    @Path("/summary")
     public Response getAnalyzedTripData(@HeaderParam("UserId") String userId) {
 
         if (userId == null) {

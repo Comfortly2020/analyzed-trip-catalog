@@ -9,7 +9,7 @@ kumuluzee:
       port: 8080
   datasources:
     - jndi-name: jdbc/AnalyzedTripDataDS
-      connection-url: jdbc:postgresql://0.0.0.0:5432/analyzed-trip-data
+      connection-url: jdbc:postgresql://0.0.0.0:5435/analyzed-trip-data
       username: dbuser
       password: postgres
       max-pool-size: 20
