@@ -41,7 +41,7 @@ public class AnalyzedTripDataResource {
     }
 
     @GET
-    @Path("/{analyzedTripDataId}")
+    @Path("/details/{analyzedTripDataId}")
     public Response getAnalyzedTripData(@HeaderParam("UserId") String userId, @PathParam("analyzedTripDataId") Integer analyzedTripDataId) {
 
         if (userId == null) {

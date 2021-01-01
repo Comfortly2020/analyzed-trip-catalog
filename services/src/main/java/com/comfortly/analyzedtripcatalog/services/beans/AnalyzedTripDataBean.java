@@ -25,7 +25,7 @@ public class AnalyzedTripDataBean {
     public List<SummaryAnalyzedTripData> getAnalyzedTripDataByUser(String userId) {
 
         // TODO selec only what is needed for the SummaryAnalyzedTripData
-        TypedQuery<AnalyzedTripDataEntity> query = emAnalyzedTrip.createQuery("SELECT t FROM TripDataEntity t WHERE t.userId = :user", AnalyzedTripDataEntity.class);
+        TypedQuery<AnalyzedTripDataEntity> query = emAnalyzedTrip.createQuery("SELECT t FROM AnalyzedTripDataEntity t WHERE t.userId = :user", AnalyzedTripDataEntity.class);
         query.setParameter("user", userId);
 
         return query.getResultList().stream()
