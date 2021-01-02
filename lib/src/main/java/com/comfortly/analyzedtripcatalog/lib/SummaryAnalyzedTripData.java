@@ -4,6 +4,7 @@ import java.time.Instant;
 
 public class SummaryAnalyzedTripData {
     private Integer id;
+    private Integer tripId;
     private String userId;
     private String startLocationName;
     private String endLocationName;
@@ -18,6 +19,14 @@ public class SummaryAnalyzedTripData {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Integer getTripId() {
+        return tripId;
+    }
+
+    public void setTripId(Integer tripId) {
+        this.tripId = tripId;
     }
 
     public String getUserId() {

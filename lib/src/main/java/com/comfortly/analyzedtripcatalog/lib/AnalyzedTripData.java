@@ -5,6 +5,7 @@ import java.util.List;
 
 public class AnalyzedTripData {
     private Integer id;
+    private Integer tripId;
     private String userId;
     private String startLocationName;
     private Double startLocationLat;
@@ -29,6 +30,14 @@ public class AnalyzedTripData {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Integer getTripId() {
+        return tripId;
+    }
+
+    public void setTripId(Integer tripId) {
+        this.tripId = tripId;
     }
 
     public String getUserId() {
