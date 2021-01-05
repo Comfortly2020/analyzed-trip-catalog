@@ -15,6 +15,9 @@ kumuluzee:
       pool:
         min-size: 2
         max-size: 5
+  config:
+    consul:
+      agent: http://52.224.38.169:80
   health:
     checks:
       data-source-health-check:
